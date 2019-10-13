@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+
+:root{
+    --secondary-color: #848484;
+}
+
+html{
+    font-size: calc(.25em + 1vw);
+}
+body{
+    width: 90vw;
+    margin: 0 auto;
+    font-family: 'Karla', sans-serif;
+    margin-top: 15vh;
+}
+
+ul{
+    list-style: none;
+}
+
+/* nav */
+nav{
+    background-color: var(--background-color-theme);
+    color: var(--color-theme);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 90vw;
+    z-index: 1;
+    top: 0;
+}
+
+nav div{
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* main */
+
+.shoping-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 2vw;
+}
+
+.item-props{
+    display: flex;
+    justify-content: space-between;
+}
+
+.company{
+    color: var(--secondary-color);
+}
+img{
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .shoping-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .impressum{
+        flex-direction: column;
+    }
+    
+  }
+
+  /* footer */
+  .impressum{
+      display: flex;
+      justify-content: space-between;
+      margin: 5vw 0;
+  }
+  .copyright{
+      display: flex;
+  }
+  .copyright h5{
+    color: var(--secondary-color);
+    margin: 0 2vw;
+  }
